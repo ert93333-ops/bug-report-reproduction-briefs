@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bug Report Reproduction Briefs | Bug report reproduction template</title>
+    <meta
+      name="description"
+      content="Paste public-safe bug report notes to create a reproducible engineering handoff for steps, environment, expected and actual behavior, impact, severity, evidence, workaround, owner, and follow-up."
+    >
+    <link rel="canonical" href="https://ert93333-ops.github.io/bug-report-reproduction-briefs/">
+    <meta property="og:title" content="Bug Report Reproduction Briefs">
+    <meta property="og:description" content="Turn vague bug reports into reproducible engineering handoffs before they hit the queue.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ert93333-ops.github.io/bug-report-reproduction-briefs/">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-product="Bug Report Reproduction Briefs">
+    <a class="skip-link" href="#workflow">Skip to bug triage workflow</a>
+    <header class="site-header" data-header>
+      <div class="shell header-inner">
+        <a class="brand" href="index.html" aria-label="Bug Report Reproduction Briefs home">
+          <span class="brand-mark">BR</span>
+          <span>Bug Report Reproduction Briefs</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#workflow">Workflow</a>
+          <a href="#pricing">Pricing</a>
+          <a href="bug-report-reproduction-template.html">Template</a>
+          <a href="#waitlist">Early access</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="shell hero-grid">
+          <div class="hero-copy reveal">
+            <h1 id="hero-title">Turn vague bug reports into reproducible engineering handoffs before they hit the queue.</h1>
+            <p class="hero-subtitle">
+              Paste public-safe symptom, repro, environment, evidence, impact, severity, workaround, owner, and follow-up notes to flag missing steps, unclear expected/actual behavior, absent version details, weak impact, vague urgency, duplicate/regression ambiguity, and unresolved owner decisions.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#workflow" data-track-cta="hero_audit">Audit sample bug report notes</a>
+              <a class="button secondary" href="#waitlist" data-track-cta="hero_waitlist">Request early access</a>
+            </div>
+          </div>
+
+          <aside class="product-preview reveal" aria-label="Example bug handoff preview">
+            <div class="preview-header">
+              <span class="status-dot"></span>
+              <span>handoff risk preview</span>
+            </div>
+            <div class="terminal-preview" aria-label="Example vague bug report">
+              <p>checkout is broken</p>
+              <p>customer is angry</p>
+              <p>please fix asap</p>
+              <p class="warn-line">missing steps, browser, expected result, evidence, severity, owner</p>
+            </div>
+            <div class="brief-preview">
+              <p class="brief-label">Brief output</p>
+              <strong>Fix before engineering triage</strong>
+              <p>Ask for repro steps, environment, expected/actual behavior, impact, evidence, workaround, owner, and customer follow-up.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section band" id="workflow" aria-labelledby="workflow-title">
+        <div class="shell workflow-layout">
+          <div class="section-copy reveal">
+            <h2 id="workflow-title">Paste bug notes. Get a reproducible triage brief and support-to-engineering handoff.</h2>
+            <p>
+              The analyzer stays in your browser. It does not connect to Jira, Linear, GitHub Issues, support systems, crash-reporting tools, logs, repositories, file uploads, email, billing, analytics APIs, or external databases.
+            </p>
+            <ol class="step-list">
+              <li>Paste public-safe bug symptoms and report notes.</li>
+              <li>Add repro attempts, expected/actual behavior, environment, evidence, impact, severity, workaround, owner, and follow-up notes.</li>
+              <li>Generate a bug reproduction brief.</li>
+              <li>Copy the engineering handoff and customer/support follow-up summary.</li>
+            </ol>
+          </div>
+
+          <form class="qa-form reveal" id="qa-form">
+            <div class="form-header">
+              <h3>Bug report reproduction auditor</h3>
+              <button class="button ghost small" type="button" id="load-sample">Load sample bug report notes</button>
+            </div>
+
+            <label for="symptom-notes">Bug symptom or report notes</label>
+            <textarea id="symptom-notes" name="symptom-notes" spellcheck="false" placeholder="Paste public-safe bug report text, support note, customer symptom, or issue draft."></textarea>
+
+            <label for="repro-notes">Reproduction steps and attempts</label>
+            <textarea id="repro-notes" name="repro-notes" class="short-textarea" placeholder="Record exact steps tried, setup, data used, click path, and whether the issue reproduces consistently."></textarea>
+
+            <div class="two-column">
+              <div>
+                <label for="expected-actual-notes">Expected vs actual behavior</label>
+                <textarea id="expected-actual-notes" name="expected-actual-notes" class="short-textarea" placeholder="Record expected result and actual result."></textarea>
+              </div>
+              <div>
+                <label for="environment-notes">Environment and version notes</label>
+                <textarea id="environment-notes" name="environment-notes" class="short-textarea" placeholder="Record browser, device, OS, app version, account tier, region, production/staging, or feature flag."></textarea>
+              </div>
+            </div>
+
+            <div class="two-column">
+              <div>
+                <label for="evidence-notes">Evidence notes</label>
+                <textarea id="evidence-notes" name="evidence-notes" class="short-textarea" placeholder="Record screenshots, console errors, logs summary, screen recording, request id, or error text summary."></textarea>
+              </div>
+              <div>
+                <label for="impact-notes">Customer impact and frequency</label>
+                <textarea id="impact-notes" name="impact-notes" class="short-textarea" placeholder="Record affected customers, segment, frequency, business impact, blocked workflow, or revenue risk."></textarea>
+              </div>
+            </div>
+
+            <div class="two-column">
+              <div>
+                <label for="severity-notes">Severity or priority rationale</label>
+                <textarea id="severity-notes" name="severity-notes" class="short-textarea" placeholder="Record P0/P1/P2/P3, severity, priority, urgency reason, release blocker, or escalation reason."></textarea>
+              </div>
+              <div>
+                <label for="workaround-notes">Workaround or mitigation notes</label>
+                <textarea id="workaround-notes" name="workaround-notes" class="short-textarea" placeholder="Record workaround, mitigation, temporary fix, retry path, rollback, feature flag, or customer instruction."></textarea>
+              </div>
+            </div>
+
+            <div class="two-column">
+              <div>
+                <label for="ownership-notes">Owner, duplicate, or regression notes</label>
+                <textarea id="ownership-notes" name="ownership-notes" class="short-textarea" placeholder="Record owner, team, suspected component, duplicate issue, recent release, regression, last known good version, or assignee."></textarea>
+              </div>
+              <div>
+                <label for="followup-notes">Customer follow-up decision</label>
+                <textarea id="followup-notes" name="followup-notes" class="short-textarea" placeholder="Record reply owner, next update time, customer-facing status, ask for more info, or triage decision."></textarea>
+              </div>
+            </div>
+
+            <div class="two-column compact">
+              <div>
+                <label for="bug-surface-type">Bug surface type</label>
+                <select id="bug-surface-type" name="bug-surface-type">
+                  <option>Web app workflow</option>
+                  <option>Checkout or billing flow</option>
+                  <option>Mobile app behavior</option>
+                  <option>API or integration issue</option>
+                  <option>Admin or dashboard issue</option>
+                  <option>Client project maintenance</option>
+                </select>
+              </div>
+              <div class="form-action">
+                <button class="button primary full" type="submit" data-track-cta="workflow_generate">
+                  Generate bug reproduction brief
+                </button>
+              </div>
+            </div>
+
+            <p class="form-error" id="workflow-error" role="alert"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="output-title">
+        <div class="shell output-layout">
+          <article class="output-panel reveal" id="output-panel">
+            <div class="output-heading">
+              <div>
+                <p class="mini-label">QA output</p>
+                <h2 id="output-title">No brief generated yet</h2>
+              </div>
+              <span class="status-pill" id="status-pill">Waiting</span>
+            </div>
+            <div id="brief-output" class="brief-output">
+              <p>Load the sample or paste your own public-safe bug report notes to generate the brief.</p>
+            </div>
+            <div class="output-actions">
+              <button class="button secondary" type="button" id="copy-brief" disabled>Copy brief</button>
+              <span id="copy-status" class="copy-status" aria-live="polite"></span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section band" id="pricing" aria-labelledby="pricing-title">
+        <div class="shell">
+          <div class="section-copy narrow reveal">
+            <h2 id="pricing-title">Reserve early access before payments are connected.</h2>
+            <p>Stripe is not connected for this experiment. The CTA captures purchase intent and prepares a public-safe demo request.</p>
+          </div>
+          <div class="pricing-grid">
+            <article class="price-card reveal">
+              <h3>Solo founder/support/QA lead</h3>
+              <p class="price">$19<span>/month</span></p>
+              <p>For one founder, support engineer, QA lead, or PM who needs cleaner bug handoffs.</p>
+              <button class="button primary plan-button" type="button" data-plan="Solo founder/support/QA lead">Request Solo access</button>
+            </article>
+            <article class="price-card featured reveal">
+              <h3>Software team/company</h3>
+              <p class="price">$79<span>/month</span></p>
+              <p>For teams that need repeatable support-to-engineering bug intake before issues reach triage.</p>
+              <button class="button primary plan-button" type="button" data-plan="Software team/company">Request Team access</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="waitlist" aria-labelledby="waitlist-title">
+        <div class="shell waitlist-layout">
+          <div class="section-copy reveal">
+            <h2 id="waitlist-title">Request the first usable build.</h2>
+            <p>This form stores locally and prepares a public-safe GitHub issue handoff. Do not paste secrets, source code, private customer data, health data, legal data, billing data, security details, or private logs.</p>
+          </div>
+          <form class="waitlist-form reveal" id="waitlist-form">
+            <label>
+              Work email
+              <input id="email" name="email" type="email" required value="bug-repro-smoke@example.invalid">
+            </label>
+            <label>
+              Role
+              <select id="role" name="role">
+                <option>QA lead</option>
+                <option>support engineer</option>
+                <option>engineering manager</option>
+                <option>product manager</option>
+                <option>B2B SaaS founder</option>
+                <option>agency maintenance lead</option>
+              </select>
+            </label>
+            <label>
+              Bug workflow type
+              <select id="workflow-type" name="workflow-type">
+                <option>Support to engineering handoff</option>
+                <option>QA intake checklist</option>
+                <option>GitHub issue template cleanup</option>
+                <option>Jira or Linear triage prep</option>
+                <option>Client maintenance bug intake</option>
+              </select>
+            </label>
+            <label>
+              Current issue tracker
+              <select id="issue-tracker" name="issue-tracker">
+                <option>GitHub Issues</option>
+                <option>Jira</option>
+                <option>Linear</option>
+                <option>Help desk first</option>
+                <option>Spreadsheet or docs</option>
+              </select>
+            </label>
+            <label>
+              Plan interest
+              <select id="plan" name="plan">
+                <option>Solo founder/support/QA lead</option>
+                <option>Software team/company</option>
+              </select>
+            </label>
+            <label>
+              Willingness to pay
+              <select id="budget" name="budget">
+                <option>$19/month if it improves bug handoffs</option>
+                <option>$79/month for a software team workflow</option>
+                <option>Need a pilot first</option>
+              </select>
+            </label>
+            <label>
+              Current bug intake pain
+              <textarea id="pain" name="pain" class="short-textarea">I need repeatable checks for repro steps, environment, expected and actual behavior, impact, severity, evidence, workaround, owner, and follow-up before bug reports reach engineering.</textarea>
+            </label>
+            <label class="checkbox-row">
+              <input id="purchase-intent" name="purchase-intent" type="checkbox" checked>
+              <span>This is a real purchase-intent or pilot request if it helps create reproducible engineering bug handoffs.</span>
+            </label>
+            <div class="form-actions">
+              <button class="button primary" type="submit" data-track-cta="waitlist_submit">Request early access</button>
+              <a class="button secondary" href="#workflow" data-track-cta="waitlist_demo">Try the auditor</a>
+            </div>
+            <p class="form-success" id="waitlist-status" role="status" aria-live="polite"></p>
+          </form>
+          <div class="handoff-panel reveal" id="handoff-panel" hidden>
+            <h3>Public-safe handoff</h3>
+            <p>Use this link only if you are comfortable opening a public GitHub issue. Email is omitted from the issue body.</p>
+            <div class="handoff-actions">
+              <a class="button primary" id="remote-intent-link" href="#" target="_blank" rel="noreferrer">Open GitHub demo request</a>
+              <button class="button secondary" type="button" id="copy-request">Copy request details</button>
+            </div>
+            <p class="copy-status" id="handoff-status" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section band" aria-labelledby="resource-title">
+        <div class="shell resource-layout">
+          <div class="section-copy reveal">
+            <h2 id="resource-title">Bug report reproduction template</h2>
+            <p>Use the SEO asset when support, QA, product, or client-maintenance teams need a cleaner bug intake checklist before triage.</p>
+          </div>
+          <a class="resource-link reveal" href="bug-report-reproduction-template.html" data-track-cta="seo_guide">
+            Open the template
+          </a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="constraints-title">
+        <div class="shell content-layout">
+          <article class="content-card reveal">
+            <h2 id="constraints-title">Bug triage boundaries are explicit.</h2>
+            <p>
+              This MVP creates bug-report triage QA from pasted public-safe samples. It does not inspect source code, read logs directly, diagnose root cause, connect to issue trackers, validate production incidents, advise on compensation, interpret contracts, replace company policy, or store customer data remotely.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <span>Bug Report Reproduction Briefs</span>
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+

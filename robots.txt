@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ert93333-ops.github.io/bug-report-reproduction-briefs/sitemap.xml
+

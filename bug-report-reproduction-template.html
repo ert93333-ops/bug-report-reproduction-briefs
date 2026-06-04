@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bug Report Reproduction Template | Bug Report Reproduction Briefs</title>
+    <meta
+      name="description"
+      content="A practical bug report reproduction template for support, QA, product, engineering, and client maintenance teams."
+    >
+    <link rel="canonical" href="https://ert93333-ops.github.io/bug-report-reproduction-briefs/bug-report-reproduction-template.html">
+    <meta property="og:title" content="Bug report reproduction template">
+    <meta property="og:description" content="Use this checklist before sending a vague bug report to engineering triage.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://ert93333-ops.github.io/bug-report-reproduction-briefs/bug-report-reproduction-template.html">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="index.html" aria-label="Bug Report Reproduction Briefs home">
+          <span class="brand-mark">BR</span>
+          <span>Bug Report Reproduction Briefs</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html#workflow">Workflow</a>
+          <a href="index.html#pricing">Pricing</a>
+          <a href="index.html#waitlist">Early access</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" aria-labelledby="template-title">
+        <div class="shell hero-grid">
+          <div class="hero-copy reveal is-visible">
+            <h1 id="template-title">Bug report reproduction template</h1>
+            <p class="hero-subtitle">
+              Use this checklist before a bug report reaches engineering. It keeps the handoff focused on reproduction steps, expected and actual behavior, environment, impact, severity, evidence, workaround, owner, and follow-up.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="index.html#workflow">Audit sample bug report notes</a>
+              <a class="button secondary" href="index.html#waitlist">Request early access</a>
+            </div>
+          </div>
+          <aside class="content-card reveal is-visible">
+            <h2>Use when the report says</h2>
+            <p>"It is broken", "ASAP", "customer is angry", "I cannot reproduce", or "works on my machine."</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section band">
+        <div class="shell content-layout">
+          <article class="content-card">
+            <h2>Copyable bug reproduction handoff</h2>
+            <pre>Title:
+[Area] Short symptom written as user-visible behavior
+
+Public-safe symptom:
+[What the customer or tester observed]
+
+Reproduction steps:
+1. [Exact starting state]
+2. [Action]
+3. [Action]
+4. [Observed failure]
+
+Expected behavior:
+[What should happen]
+
+Actual behavior:
+[What happened instead]
+
+Environment:
+[Browser, device, OS, app version, account tier, region, feature flag, production/staging]
+
+Evidence summary:
+[Screenshot, console error, log summary, request id, screen recording, customer quote, or error text summary]
+
+Impact and frequency:
+[Who is affected, how often, blocked workflow, revenue/customer risk]
+
+Severity rationale:
+[P0/P1/P2/P3 or priority with reason]
+
+Workaround or mitigation:
+[Known workaround, retry path, rollback, temporary fix, or none known]
+
+Duplicate or regression context:
+[Related issue, recent release, last known good version, component, or regression signal]
+
+Owner and next step:
+[Assigned team/person, triage decision, follow-up time, customer reply owner]</pre>
+          </article>
+
+          <aside class="content-card">
+            <h2>Do not include</h2>
+            <ul class="step-list">
+              <li>API keys, tokens, passwords, or secrets.</li>
+              <li>Private source code or proprietary logs.</li>
+              <li>Private customer, health, legal, employee, billing, or security details.</li>
+              <li>Compensation, warranty, SLA, or contract promises.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell content-layout">
+          <article class="content-card">
+            <h2>Minimum triage checks</h2>
+            <ol class="step-list">
+              <li>Can another person follow the steps without asking the reporter?</li>
+              <li>Does the report say expected and actual behavior separately?</li>
+              <li>Does the environment include enough version/device/context detail?</li>
+              <li>Does severity explain business or customer impact, not just urgency?</li>
+              <li>Does the handoff include evidence, workaround, owner, and follow-up decision?</li>
+            </ol>
+          </article>
+
+          <aside class="content-card">
+            <h2>Need the analyzer?</h2>
+            <p>Paste your public-safe notes into the browser-local auditor to flag missing sections automatically.</p>
+            <a class="button primary" href="index.html#workflow">Open auditor</a>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <span>Bug Report Reproduction Briefs</span>
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+    </footer>
+  </body>
+</html>
+
