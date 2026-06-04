@@ -6,6 +6,7 @@ Static browser-local MVP for turning public-safe bug report notes into a reprodu
 
 - Landing: `https://ert93333-ops.github.io/bug-report-reproduction-briefs/`
 - Template: `https://ert93333-ops.github.io/bug-report-reproduction-briefs/bug-report-reproduction-template.html`
+- Public checklist Gist: `https://gist.github.com/ert93333-ops/c3783fc745aea45d594a539b1f3de38f`
 
 ## Scope
 
@@ -20,4 +21,3 @@ From the Hermes playbook root:
 ```powershell
 npm run workflow:bug-report-reproduction
 ```
-
